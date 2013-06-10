@@ -3,7 +3,7 @@ numbers := List clone
 for(i, 1, 15, numbers push(i))
 
 // Define the speaker
-fizzbuzz := method(i,
+fizzbuzz := method(m,
 	say := ""
 	if(m % 3 == 0, say = say .. "Fizz")
 	if(m % 5 == 0, say = say .. "Buzz")
