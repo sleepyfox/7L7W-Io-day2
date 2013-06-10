@@ -46,8 +46,10 @@ Test assertEqual("number of tests failed should be one", Test numberOfTestsFaile
 
 Test results := method(
 	writeln("\nTest results\n===")
-	writeln(Test numberOfTestsPassed .. "/" .. Test numberOfTestsRun .. " test(s) passed")
-	writeln(Test numberOfTestsFailed .. " test(s) failed")
+	writeln(self numberOfTestsPassed .. "/" .. self numberOfTestsRun .. " test(s) passed")
+	if(self numberOfTestsFailed > 0) then(
+		writeln(self numberOfTestsFailed .. " test(s) failed")
+	)
 )
 
 Test results
